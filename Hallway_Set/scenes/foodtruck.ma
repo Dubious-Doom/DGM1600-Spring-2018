@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
-//Name: Hallway_Set.ma
-//Last modified: Sun, Feb 11, 2018 10:57:02 PM
+//Name: foodtruck.ma
+//Last modified: Sun, Feb 11, 2018 10:57:31 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "E05F6F48-424F-C723-9579-AC819D90FBBA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.698823669435125 12.740999406754877 24.9453395014725 ;
-	setAttr ".r" -type "double3" -18.938352729726414 34.99999999999882 -9.7068508332422327e-016 ;
+	setAttr ".t" -type "double3" 12.949897163186298 11.081010154273688 19.930930729889273 ;
+	setAttr ".r" -type "double3" -20.138352729728659 28.199999999999186 -1.8044605827942112e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B66BDAEE-4A17-9D7C-0F80-849DA81F3E4E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 24.2115390994623;
+	setAttr ".coi" 16.783850227241356;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -271,19 +271,19 @@ createNode mesh -n "pCubeShape5" -p "pCube5";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9C5D072D-431E-5912-8C1A-FB8B2A01FDA4";
+	rename -uid "0634E919-47BB-83D4-5A15-0BA27CB9B705";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D02AF3BF-4A47-4A0B-CE70-5E85A259294A";
+	rename -uid "F5C3DD39-4171-161C-645A-2CB6B9FDE0EE";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "AA796197-4480-2D9B-64B3-8384CFAA1902";
+	rename -uid "84EFAF1E-4305-4264-C976-6D86E0D9C48B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3C048BD8-4332-3243-C237-A381F450C72E";
+	rename -uid "575D0E86-4665-12F5-FB72-A5A509A947F2";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0B921796-46B7-3833-AED5-F391DD189CFD";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F741A792-45C4-443B-7963-63995DF7345B";
+	rename -uid "3F3E47C0-44F9-6F05-0F48-AEAB6E97F592";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5B1BD32C-44C6-CED6-FC11-7AB598FCC35C";
 	setAttr ".g" yes;
@@ -595,4 +595,4 @@ connectAttr "pCubeShape4.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "grillShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "coolerShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
-// End of Hallway_Set.ma
+// End of foodtruck.ma
