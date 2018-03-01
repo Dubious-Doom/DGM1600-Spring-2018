@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Character_Model_II.ma
-//Last modified: Wed, Feb 28, 2018 06:55:00 PM
+//Last modified: Thu, Mar 01, 2018 11:35:09 AM
 //Codeset: 1252
 requires maya "2017ff05";
 requires -nodeType "displayPoints" "Type" "2.0";
@@ -15,17 +15,17 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3437B5B4-4E06-C024-D160-51AD1CAEEE1B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.40979603304022261 4.025465782803626 1.0816393543969094 ;
-	setAttr ".r" -type "double3" -27.338352729856801 -35.000000000001229 1.9413701666485041e-015 ;
+	setAttr ".t" -type "double3" 0.74830100410122169 4.4885816736331838 2.0954104023195113 ;
+	setAttr ".r" -type "double3" -25.538352729859046 -10.600000000002144 4.0447150011129769e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7B9A7268-42C6-FA70-67C4-3782357ED7E0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 1.6993217017967854;
+	setAttr ".coi" 1.7231908237981404;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.0086559951305389404 3.7325730323791504 0.74350801110267639 ;
+	setAttr ".tp" -type "double3" 1.0343140363693237 3.7456879615783691 0.56711328029632568 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "095B29BD-44CE-9AF8-F8B5-44BA74FCE6FA";
@@ -206,17 +206,19 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 6 ".pt";
+	setAttr -s 8 ".pt";
 	setAttr ".pt[109]" -type "float3" 0 0.067057014 0 ;
 	setAttr ".pt[187]" -type "float3" 0 0 0.016074063 ;
+	setAttr ".pt[207]" -type "float3" -0.056150846 0 0 ;
+	setAttr ".pt[208]" -type "float3" -0.096059814 0 0 ;
 	setAttr ".pt[229]" -type "float3" 0 -0.0072761318 -0.025530059 ;
-	setAttr ".pt[230]" -type "float3" 0 -0.042945381 -0.066025682 ;
+	setAttr ".pt[230]" -type "float3" -0.065563709 -0.019471783 -0.066025682 ;
 	setAttr ".pt[251]" -type "float3" 0 0.032902498 0 ;
 	setAttr ".dr" 1;
 createNode mesh -n "polySurfaceShape1" -p "pPlane1";
