@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: RobotB_Animation.ma
-//Last modified: Thu, Apr 19, 2018 01:15:46 PM
+//Last modified: Thu, Apr 19, 2018 01:24:24 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A1E8E213-4954-39AC-9244-DBA74BE438DF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 114.70316407431243 44.059800519504549 51.459047169454202 ;
-	setAttr ".r" -type "double3" -15.000000000002094 422.79999999995283 0 ;
+	setAttr ".t" -type "double3" 21.171274471956394 47.197817011827411 192.16450631310369 ;
+	setAttr ".r" -type "double3" -10.199999999998537 364.40000000007376 -8.4733213501180275e-016 ;
 	setAttr ".rp" -type "double3" -2.7755575615628914e-017 -6.6613381477509392e-016 
 		0 ;
 	setAttr ".rpt" -type "double3" -7.2406915407477417e-013 -2.654303433975627e-013 
@@ -26,7 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 122.19571767532605;
+	setAttr ".coi" 185.6952708975391;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -85,7 +85,6 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "38DB88F3-4031-4C00-6E0B-73AA686B91BB";
 	setAttr ".t" -type "double3" 1005.0120154852307 2.3308436331835374 0.0021167906475076936 ;
-	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 	setAttr ".rp" -type "double3" 0 2.2204460492503131e-016 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "989A7AB2-40FC-F6ED-58D8-AA8D408D5641";
@@ -45800,16 +45799,16 @@ createNode polyPlane -n "polyPlane1";
 createNode animCurveTA -n "Pelvis_Geo_rotateX";
 	rename -uid "F54C746E-443D-F4BD-9262-60B33CACD4B4";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 8 0 12 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 0;
 createNode animCurveTA -n "Pelvis_Geo_rotateY";
 	rename -uid "252BA78A-4A6B-5E96-6F61-0C87624B56CD";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 4.7997661441156891 8 6.0239946466879406
+	setAttr -s 3 ".ktv[0:2]"  1 4.7997661441156891 6 6.0239946466879406
 		 12 -0.76103456617613174;
 createNode animCurveTA -n "Pelvis_Geo_rotateZ";
 	rename -uid "56CCFB36-4CA4-D54A-A71E-BB9622F84DAA";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 8 0 12 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 0;
 createNode animCurveTA -n "L_Wrist_Geo_rotateX";
 	rename -uid "41CE8076-49AA-97DD-3BE4-DCBAB5535A22";
 	setAttr ".tan" 18;
@@ -45862,7 +45861,7 @@ createNode animCurveTA -n "R_Thigh_Geo_rotateX";
 	rename -uid "40924FB9-45E8-1EDB-9509-E0ABDD65BD0B";
 	setAttr ".tan" 18;
 	setAttr -s 3 ".ktv[0:2]"  1 -20.255461022490383 6 -53.817071122649558
-		 12 -53.900780668547903;
+		 12 17.978579697618418;
 createNode animCurveTA -n "R_Thigh_Geo_rotateY";
 	rename -uid "19E76971-44BC-B382-5E9B-03A7E15C989D";
 	setAttr ".tan" 18;
@@ -45898,28 +45897,28 @@ createNode animCurveTA -n "L_Toe_03_Geo_rotateZ";
 createNode animCurveTA -n "L_Shin_Geo_rotateX";
 	rename -uid "1ABC8948-457F-DFBD-5003-67A90D9B3B73";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 7.1823835490160279 12 7.1823835490160279;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 7.1823835490160279 12 61.333759728781189;
 createNode animCurveTA -n "L_Shin_Geo_rotateY";
 	rename -uid "E8BC3155-45EA-DC91-36AE-D398174E28E2";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 0.084051981674933038 12 0.084051981674933038;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0.084051981674933038 12 0.084051981674933648;
 createNode animCurveTA -n "L_Shin_Geo_rotateZ";
 	rename -uid "C94B151A-4F04-DDE2-8E85-678849B6D2EE";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 0.072832194605060366 12 0.072832194605060366;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0.072832194605060366 12 0.072832194605060491;
 createNode animCurveTA -n "L_Thigh_Geo_rotateX";
 	rename -uid "CB8CAC1C-47C3-AC76-752B-648BDF68D74C";
 	setAttr ".tan" 18;
 	setAttr -s 3 ".ktv[0:2]"  1 29.808355335812262 6 34.830235003669529
-		 12 9.9944721947282016;
+		 12 -48.233913891789541;
 createNode animCurveTA -n "L_Thigh_Geo_rotateY";
 	rename -uid "ADAFAB35-43A7-9437-B9DC-0B92995ABDA9";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 -0.027197010118091357 12 -0.027197010118091506;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 -0.027197010118091357 12 -0.027197010118091412;
 createNode animCurveTA -n "L_Thigh_Geo_rotateZ";
 	rename -uid "49D35E1E-437B-F329-BB69-32A3CC75D31B";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 -0.51083567874885438 12 -0.51083567874885127;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 -0.51083567874885438 12 -0.51083567874884783;
 createNode animCurveTA -n "L_Hip_Geo_rotateX";
 	rename -uid "3ECF5D64-4022-4CE9-F6F1-E2821AA93BE0";
 	setAttr ".tan" 18;
@@ -45947,7 +45946,7 @@ createNode animCurveTA -n "R_Wrist_Geo_rotateZ";
 createNode animCurveTA -n "R_Elbow_Geo_rotateX";
 	rename -uid "AB58C623-47C2-6BDE-B4F3-4BA1E6E440C8";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 -9.3703932715217526 6 -7.783339764683725
+	setAttr -s 3 ".ktv[0:2]"  1 -9.3703932715217526 6 -4.2921839068479279
 		 12 17.423029399140482;
 createNode animCurveTA -n "R_Elbow_Geo_rotateY";
 	rename -uid "F9B64B1A-40F4-4901-29DC-23B4D734320A";
@@ -45960,7 +45959,7 @@ createNode animCurveTA -n "R_Elbow_Geo_rotateZ";
 createNode animCurveTA -n "R_Shoulder_Geo_rotateX";
 	rename -uid "9DFD2B7F-4975-1ED2-A7C5-519E34A2B7DE";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 30.773790936711467 6 42.397001365756175
+	setAttr -s 3 ".ktv[0:2]"  1 30.773790936711467 6 51.156933486862648
 		 12 22.813037863308889;
 createNode animCurveTA -n "R_Shoulder_Geo_rotateY";
 	rename -uid "41F5A265-4004-5439-39CA-53B77164BFE8";
@@ -45973,7 +45972,7 @@ createNode animCurveTA -n "R_Shoulder_Geo_rotateZ";
 createNode animCurveTA -n "L_Shoulder_Geo_rotateX";
 	rename -uid "DC93D273-4C2D-47FC-ABF5-1C84498B61D6";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 -26.43334440250965 6 -35.421512884053129
+	setAttr -s 3 ".ktv[0:2]"  1 -26.43334440250965 6 -51.667466149313562
 		 12 -6.2358052619558793;
 createNode animCurveTA -n "L_Shoulder_Geo_rotateY";
 	rename -uid "EDA49035-4092-01E8-11AC-229059E8E660";
@@ -45986,7 +45985,7 @@ createNode animCurveTA -n "L_Shoulder_Geo_rotateZ";
 createNode animCurveTA -n "L_Elbow_Geo_rotateX";
 	rename -uid "5F26C24A-49F6-BA72-898E-E0A058CDAEC5";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 -20.344655641504364 6 -23.191708703877381
+	setAttr -s 3 ".ktv[0:2]"  1 -20.344655641504364 6 -41.173836821839707
 		 12 -28.660528655484107;
 createNode animCurveTA -n "L_Elbow_Geo_rotateY";
 	rename -uid "011C7ECE-4F64-6804-2A27-B89651CBFC96";
@@ -46011,7 +46010,7 @@ createNode animCurveTA -n "R_Toe_03_Geo_rotateZ";
 createNode animCurveTA -n "R_Ankle_Geo_rotateX";
 	rename -uid "87A576F7-48BD-7041-14F7-78968547DB24";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 20.542573041285806;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 -9.5928657743724823;
 createNode animCurveTA -n "R_Ankle_Geo_rotateY";
 	rename -uid "8828DC13-4DFC-714F-1177-0E83FF185A1E";
 	setAttr ".tan" 18;
@@ -46023,7 +46022,7 @@ createNode animCurveTA -n "R_Ankle_Geo_rotateZ";
 createNode animCurveTA -n "R_Shin_Geo_rotateX";
 	rename -uid "0971591C-4F6A-3102-EE1C-DAA023143978";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 6 53.614940756453812 12 76.135260457648968;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 53.614940756453812 12 -3.8688570671910427;
 createNode animCurveTA -n "R_Shin_Geo_rotateY";
 	rename -uid "BB5A8943-4078-7382-33DE-D4ADA18A998C";
 	setAttr ".tan" 18;
@@ -46145,19 +46144,31 @@ createNode animCurveTA -n "R_Toe_02_Geo_rotateZ";
 createNode animCurveTL -n "Pelvis_Geo_translateX";
 	rename -uid "E3360B72-49E5-3DD8-23A1-AC9A02D79BE9";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 8 0 12 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 0;
 createNode animCurveTL -n "Pelvis_Geo_translateY";
 	rename -uid "2A5D1367-4977-A9DA-C561-628001761CEB";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 -1.1498258307874423 8 -2.6935266847828885
+	setAttr -s 3 ".ktv[0:2]"  1 -1.1498258307874423 6 -2.6935266847828885
 		 12 0.08691144930056538;
 createNode animCurveTL -n "Pelvis_Geo_translateZ";
 	rename -uid "E9C04A1C-4C65-C398-1DB4-65B2FC02445C";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  1 0 8 0 12 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 0 12 0;
+createNode animCurveTA -n "side_rotateX";
+	rename -uid "6CF5A1B9-41FD-E58E-8C2C-06BA92480C06";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  6 0;
+createNode animCurveTA -n "side_rotateY";
+	rename -uid "8ED83D36-4B43-78E1-5EAD-6487DE517B0D";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  6 89.999999999999986;
+createNode animCurveTA -n "side_rotateZ";
+	rename -uid "74F647AE-4853-D259-1B47-CA8650D4E69F";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  6 0;
 select -ne :time1;
-	setAttr ".o" 6;
-	setAttr ".unw" 6;
+	setAttr ".o" 12;
+	setAttr ".unw" 12;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -46187,6 +46198,9 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+connectAttr "side_rotateX.o" ":side.rx";
+connectAttr "side_rotateY.o" ":side.ry";
+connectAttr "side_rotateZ.o" ":side.rz";
 connectAttr "Pelvis_Geo_translateX.o" "Pelvis_Geo.tx";
 connectAttr "Pelvis_Geo_translateY.o" "Pelvis_Geo.ty";
 connectAttr "Pelvis_Geo_translateZ.o" "Pelvis_Geo.tz";
